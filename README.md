@@ -59,9 +59,7 @@ Train the network using "train.py" (150 epochs). The trained model will be saved
 python train.py --dataset university
 ```
 
-Test the network and measure the accuracy. The detection threshold (a number between 0 and 1) controls 
-the confidence level above which a pixel will be considered a positive detection.
-Result images will be displayed if the "--viz" flag is used, otherwise only the accuracy is computed.
+Assess the network's performance and accuracy. The detection threshold (a value between 0 and 1) determines the degree of confidence over which a detected pixel is deemed affirmative. If the "—viz" option is provided, result pictures are presented; otherwise, just the accuracy is calculated.
 
 ```
 python test.py --dataset university --imsize 385 --detection_threshold 0.99 --viz --min_cluster 200 --save
