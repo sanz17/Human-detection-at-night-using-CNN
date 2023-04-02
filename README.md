@@ -47,13 +47,7 @@ python baselines.py --dataset university --method threshold --viz --save_frame 1
 
 ## Convolutional Neural Network
 
-The first step is to convert the image files and label files into H5 files for use in training.
-If the "--use_history" flag is included, the input channels will have 3 components:
-(i) infrared image intensity
-(ii) difference image for 1 time step
-(iii) output image from running background subtraction 
-Before doing this, make sure to run "baselines.py" with "--method backSub" to save background subtraction results in the "backSub" folder.
-Otherwise, only the first component is used. 
+First, the picture files and label files are converted into H5 files for use in training. If the "—use history" option is present, input channels will include three components: I the intensity of the infrared picture (ii) the difference image for one time step (iii) the output image after executing background subtraction Before proceeding, run "baselines.py" with "—method backSub" to save results of background subtraction in the "backSub" folder. If not, just the first component is used.
 
 ```
 python process_record.py --dataset university --imsize 385
